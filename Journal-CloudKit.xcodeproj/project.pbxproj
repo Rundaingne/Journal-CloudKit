@@ -14,6 +14,8 @@
 		F704F04D225BD887008A0670 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F704F04C225BD887008A0670 /* CloudKit.framework */; };
 		F704F052225BD91A008A0670 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F704F051225BD91A008A0670 /* Entry.swift */; };
 		F704F055225BD930008A0670 /* Entry Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F704F054225BD930008A0670 /* Entry Controller.swift */; };
+		F704F059225BE614008A0670 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F704F058225BE614008A0670 /* EntryDetailViewController.swift */; };
+		F704F05B225BE621008A0670 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F704F05A225BE621008A0670 /* EntryListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		F704F04C225BD887008A0670 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F704F051225BD91A008A0670 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		F704F054225BD930008A0670 /* Entry Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry Controller.swift"; sourceTree = "<group>"; };
+		F704F058225BE614008A0670 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		F704F05A225BE621008A0670 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +112,27 @@
 		F704F053225BD91F008A0670 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F704F054225BD930008A0670 /* Entry Controller.swift */,
+				F704F057225BE606008A0670 /* View Controllers */,
+				F704F056225BE5FD008A0670 /* Model Controllers */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F704F056225BE5FD008A0670 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F704F054225BD930008A0670 /* Entry Controller.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		F704F057225BE606008A0670 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F704F058225BE614008A0670 /* EntryDetailViewController.swift */,
+				F704F05A225BE621008A0670 /* EntryListTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F704F052225BD91A008A0670 /* Entry.swift in Sources */,
+				F704F05B225BE621008A0670 /* EntryListTableViewController.swift in Sources */,
 				F704F039225BD871008A0670 /* AppDelegate.swift in Sources */,
+				F704F059225BE614008A0670 /* EntryDetailViewController.swift in Sources */,
 				F704F055225BD930008A0670 /* Entry Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +367,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Journal-CloudKit/Journal-CloudKit.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
-				INFOPLIST_FILE = "$(SRCROOT)/Journal-CloudKit/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +386,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Journal-CloudKit/Journal-CloudKit.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q89A379BUF;
-				INFOPLIST_FILE = "$(SRCROOT)/Journal-CloudKit/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
